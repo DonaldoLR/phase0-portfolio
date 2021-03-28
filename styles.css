@@ -1,3 +1,19 @@
 /* body {
     background-color: aqua;
 } */
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+img {
+    width: 40vw;
+}
+.content {
+    flex: 1;
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
