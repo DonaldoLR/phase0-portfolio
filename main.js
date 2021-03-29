@@ -5,7 +5,13 @@ const socialMedia = [
     {company: 'Medium', logo: './medium-size.svg', url: 'https://donaldolr.medium.com/'}
 ]
 
-for (i = 0; i < socialMedia.length; i++){
-    const socialMediaDiv = document.getElementById('socialMedia-div');
-    let socialIcon = document.createElement('a');
+const footer = document.getElementsByTagName('footer')[0];
+const footerImgs = footer.getElementsByTagName('img');
+const footerA = footer.getElementsByTagName('a');
+
+for (let i = 0; i < socialMedia.length; i++){
+    footerA[i].setAttribute('href', socialMedia[i].url);
+    footerA[i].setAttribute('target', '_blank');
+    footerImgs[i].setAttribute('src', socialMedia[i].logo);
+    footerImgs[i].setAttribute('width', '50px');
 }
