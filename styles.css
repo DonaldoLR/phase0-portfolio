@@ -52,6 +52,9 @@ table {
 }
 
 /*My Code*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
 section {
     height: 100vh;
     display: flex;
@@ -60,12 +63,21 @@ section {
 img {
     width: 40vw;
 }
+h1,h2,h3,p {
+    margin: 20px 0px;
+   
+}
 h1 {
-    font-family: 'Roboto', sans-serif;
+    
     font-size: 48px;
 }
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 32px;
+}
 p {
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     margin: 5px 0px;
 }
@@ -86,8 +98,17 @@ button:focus{
 .content {
     flex: 1;
     text-align: center;
-    
 }
 footer {
     text-align: center;
+}
+#about-section  {
+    
+    background-image: url('./about-background.png');
+    background-size: cover;
+}
+#profile-picture {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
 }
